@@ -4,11 +4,12 @@ metadata:
   name: wil-playground-service
   namespace: dev
 spec:
+  type: NodePort # to connect from outside the cluster
   selector:
     app: wil-playground
   ports:
     - protocol: TCP
-      type: NodePort # to connect from outside the cluster
       port: 8888
       targetPort: 8888
       nodePort: 30080  # 30000–32767 (Kubernetes default).
+
