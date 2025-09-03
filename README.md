@@ -12,7 +12,8 @@ App repo of the manifests needed for InceptionOfThings CiCd project with ArgoCD
 
 ```bash
 # Check after sync
-curl localhost:8888
+# curl localhost:8888
+curl dev.localhost
 # Output
 # {"status":"ok", "message": "v1"}
 ```
