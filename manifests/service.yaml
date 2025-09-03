@@ -7,8 +7,7 @@ spec:
   selector:
     app: wil-playground
   ports:
-    # - protocol: TCP
-    - port: 8888
+    - protocol: TCP
+      port: 8888
       targetPort: 8888
-      # nodePort: 30080  # 30000–32767 (Kubernetes default).
-  # type: NodePort # to connect from outside the cluster
+      nodePort: 30080  # 30000–32767 (Kubernetes default).
